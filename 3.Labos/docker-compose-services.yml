@@ -1,0 +1,17 @@
+version: '3.8'
+
+services:
+  temperature-microservice:
+    image: temperature-microservice
+    ports:
+      - "8081:8081"
+
+  humidity-microservice:
+    image: humidity-microservice
+    ports:
+      - "8082:8082"
+
+  aggregator-microservice:
+    image: aggregator-microservice
+    ports:
+      - "8080:8080"

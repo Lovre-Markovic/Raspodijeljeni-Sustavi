@@ -1,0 +1,11 @@
+version: '3.8'
+services:
+  eureka-server:
+    image: eureka-server
+    ports:
+      - "8761:8761"
+
+  config-server:
+    image: config-server-microservice
+    ports:
+      - "8888:8888"
